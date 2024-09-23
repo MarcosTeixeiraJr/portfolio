@@ -1,0 +1,373 @@
+/* Este repositório base foi criado para te ajudar caso você não saiba como começar. Lembre-se de que o portfólio é a sua carta de apresentação e você deve dar a sua cara. Por isso, convidamos você a personalizá-lo de acordo com o seu estilo e preferências; não se limite apenas ao layout proposto no Figma. */
+:root {
+    --cor-de-fundo: #F5F5F5;
+    --cor-de-fundo-menu: #ffffff;
+    --cor-do-link: #000000; 
+    --cor-um: #844153;
+    --cor-dois: #997593;
+    --cor-tres: #A7A4AD;
+    --cor-quatro: #527674;
+    --cor-cinco: #193735;
+}
+
+body {
+    background-color: var(--cor-dois);
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    line-height: 1.6;
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor-do-link);
+}
+
+/* ------------------------------ Seção Menu -------------------------------*/
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--cor-um);
+}
+
+.cabecalho__logo {
+    max-width: 80px; /* Ajuste para telas pequenas */
+}
+
+.cabecalho__titulo {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.navegacao__lista {
+    display: none;
+}
+
+.navegacao__elemento a {
+    font-size: 0.9rem;
+    align-items: center;
+}
+/* ------------------------------ Seção Apresentação ------------------------------*/
+.apresentacao {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Adicionado */flex-direction: row-reverse;
+
+}
+
+.apresentacao__foto {
+    border-radius: 15%;
+    max-width: 368px;
+    width: 50%; /* Adicionado */
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    gap: 40px;
+}
+
+.apresentacao__conteiner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%; /* Adicionado */
+    padding: 40px;
+}
+
+.redes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+/* ------------------------------ Seção Sobre mim ----------------------------------*/
+.sobre-mim {
+    background: var(--cor-tres);
+    padding: 80px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,-0,0,0.1);
+    max-width: max-content;
+    
+}
+
+.sobre-mim__titulo {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sobre-mim__teto {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+/*------------------------------ Seção de Habilidades ------------------------------*/
+
+/* Estilos para a seção Habilidades */
+.habilidades {
+    background-color: var(--cor-tres);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.habilidades__titulo {
+    font-size: 2em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.habilidades__lista {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.habilidades__elemento {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 120px;
+    transition: transform 0.3s;
+}
+
+.habilidades__elemento:hover {
+    transform: scale(1.05);
+}
+
+.habilidades__icone {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.habilidades__nome {
+    font-size: 1.1em;
+    color: #666;
+}
+
+
+/* Estilos para a seção Formação Acadêmica */
+.formacao {
+    background-color: var(--cor-tres);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.formacao__titulo {
+    font-size: 2em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.formacao__lista {
+    list-style: none;
+    padding: 0;
+}
+
+.formacao__elemento {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+    padding: 10px;
+    transition: transform 0.3s;
+}
+
+.formacao__elemento:hover {
+    transform: scale(1.05);
+}
+
+.formacao__icone {
+    width: 100px;
+    height: 100px;
+    margin-right: 15px;
+}
+
+.formacao__nome {
+    font-size: 1.2em;
+    color: #333;
+    margin: 0;
+}
+
+.formacao__detalhe {
+    font-size: 1em;
+    color: #666;
+    margin: 5px 0 0 0;
+}
+
+
+/*------------------------------ Seção de Projetos --------------------------------*/
+
+.projetos {
+    background-color: var(--cor-tres);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.projetos__titulo {
+    font-size: 2em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.projetos__conteiner {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+    padding: 15px;
+    transition: transform 0.3s;
+}
+
+.projetos__conteiner:hover {
+    transform: scale(1.05);
+}
+
+.projetos__nome {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.projetos__descricao {
+    font-size: 1.1em;
+    color: #666;
+    line-height: 1.6;
+}
+
+
+/*------------------------------ Seção de Contato ---------------------------------*/
+
+/* Estilos para a seção de contato */
+.contato {
+    background-color: var(--cor-quatro);
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contato__titulo {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contato__formulario {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contato__campo {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.contato__campo--textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.contato__botao {
+    background-color: var(--cor-dois);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.contato__botao:hover {
+    background-color: var(--cor-um);
+}
+
+
+/* ------------------------------Rodapé ------------------------------------------------*/
+
+/* Estilos para o rodapé */
+.rodape {
+    background-color: var(--cor-cinco);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.rodape__subtitulo {
+    font-size: 1em;
+    margin: 0;
+}
+
+/* ------------------------------ Responsividade ---------------------------------------*/
+
+/* Tablets e telas maiores */
+@media (min-width: 768px) {
+    .cabecalho {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cabecalho__logo {
+        max-width: 100px;
+    }
+
+    .cabecalho__titulo {
+        font-size: 1.5rem;
+    }
+
+    .navegacao__lista {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin-top: 0;
+    }
+
+    .navegacao__elemento a {
+        font-size: 1rem;
+    }
+
+/* Telas grandes */
+@media (min-width: 1024px) {
+    /* Aqui você pode ajustar ainda mais o design para telas grandes */
+    .cabecalho__titulo {
+        font-size: 1.8rem;
+    }
+
+    .navegacao__elemento a {
+        font-size: 1.1rem;
+    }
+}
+       
+   
+
