@@ -351,10 +351,9 @@ a {
 
 
 
-@media (max-width: 868px) {
+@media (max-width: 768px) {
     .cabecalho {
-        flex-direction: row;
-        align-items: center;
+        width: 100%;
     }
 
     .cabecalho__titulo {
@@ -388,10 +387,11 @@ a {
 
     .apresentacao__foto, .apresentacao__conteiner {
         width: 100%;
-        padding: 20px;
+        padding: 40px;
     }
 
     .sobre-mim {
+        width: 100%;
         padding: 40px;
     }
 
@@ -403,9 +403,17 @@ a {
         font-size: 1em;
     }
 
+    .habilidades {
+        width: 100%;
+    }
+
     .habilidades__elemento {
         width: 100px;
         padding: 5px;
+    }
+
+    .formacao {
+        width: 100%;
     }
 
     .formacao__elemento {
@@ -428,8 +436,14 @@ a {
         font-size: 0.9em;
     }
 
+    .projetos {
+        width: 100%;
+    }
+
     .projetos__conteiner {
+        width: 100%;
         padding: 10px;
+        
     }
 
     .projetos__nome {
@@ -441,6 +455,7 @@ a {
     }
 
     .contato {
+        width: 100%;
         padding: 30px 20px;
     }
 
@@ -462,6 +477,7 @@ a {
 
     .rodape {
         padding: 15px 0;
+        width: 100%;
     }
 
     .rodape__subtitulo {
@@ -469,13 +485,15 @@ a {
     }
 }
 
-@media (max-width: 580px) {
+@media (max-width: 650px) {
     .cabecalho {
         padding: 10px;
+        
     }
 
     .cabecalho__titulo {
         font-size: 18px;
+        
     }
 
     .navegacao__elemento a {
