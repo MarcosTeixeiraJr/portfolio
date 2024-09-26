@@ -10,12 +10,15 @@
     --cor-cinco: #193735;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-color: var(--cor-dois);
     font-family: 'Raleway', sans-serif;
-    margin: 0;
-    box-sizing: border-box;
-    padding: 0;
     line-height: 1.6;
     width: 100%;
     height: 100%;
@@ -87,6 +90,7 @@ a {
     width: 50%; /* Adicionado */
     display: flex;
     align-items: center;
+    margin: 40px;
     
 }
 
@@ -320,7 +324,7 @@ a {
 }
 
 .contato__botao {
-    background-color: var(--cor-dois);
+    background-color: var(--cor-um);
     color: white;
     padding: 10px 20px;
     border: none;
@@ -330,7 +334,7 @@ a {
 }
 
 .contato__botao:hover {
-    background-color: var(--cor-um);
+    background-color: var(--cor-cinco);
 }
 
 
