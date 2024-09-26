@@ -168,7 +168,7 @@ a {
     margin: 10px;
     padding: 10px;
     text-align: center;
-    width: 120px;
+    width: 120px; /* Aumenta a largura */
     transition: transform 0.3s;
 }
 
@@ -185,6 +185,9 @@ a {
 .habilidades__nome {
     font-size: 1.1em;
     color: #666;
+    overflow: hidden; /* Oculta o texto que ultrapassar o tamanho do contêiner */
+    text-overflow: ellipsis; /* Adiciona reticências (...) ao final do texto */
+    white-space: nowrap; /* Impede que o texto quebre em várias linhas */
 }
 
 
@@ -541,7 +544,7 @@ a {
     }
 
     .habilidades__elemento {
-        width: 80px;
+        width: 100px;
         padding: 5px;
     }
 
