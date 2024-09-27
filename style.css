@@ -545,13 +545,12 @@ a {
 @media (max-width: 650px) {
     .cabecalho {
         padding: 10px 20px;
-        margin-right: 0;
-        
+        margin-right: 0;  
     }
 
     .cabecalho__titulo {
-        font-size: 18px;
-        
+        font-size: 2rem;
+        font-weight: 800;
     }
 
     .navegacao__elemento a {
