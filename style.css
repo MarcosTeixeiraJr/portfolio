@@ -1,4 +1,6 @@
 /* Este repositório base foi criado para te ajudar caso você não saiba como começar. Lembre-se de que o portfólio é a sua carta de apresentação e você deve dar a sua cara. Por isso, convidamos você a personalizá-lo de acordo com o seu estilo e preferências; não se limite apenas ao layout proposto no Figma. */
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Teko:wght@300..700&display=swap');
+
 :root {
     --cor-de-fundo: #F5F5F5;
     --cor-de-fundo-menu: #ffffff;
@@ -8,6 +10,9 @@
     --cor-tres: #A7A4AD;
     --cor-quatro: #527674;
     --cor-cinco: #193735;
+    --font-um: "Montserrat", system-ui;
+    --font-dois: "Inter", system-ui;
+    --font-tres: "Epilogue", system-ui;
 }
 
 * {
@@ -22,6 +27,22 @@ body {
     line-height: 1.6;
     width: 100%;
     height: 100%;
+}
+
+h1 {
+    font-family: var(--font-dois);
+}
+
+h2 {
+    font-family: var(--font-tres);
+}
+
+h3 {
+    font-family: var(--font-tres);
+}
+
+p {
+    font-family: var(--font-um);
 }
 
 ol, ul, li {
@@ -47,9 +68,12 @@ a {
 .cabecalho__titulo {
     margin: 0;
     padding: 0 0 0 40px;
+    font-family: var(--font-quatro);
+    font-weight: 900;
     font-size: 24px;
     text-align: center;
     flex: 1;
+    text-transform: uppercase;
 }
 
 /* Navegação */
@@ -302,6 +326,14 @@ a {
     padding-left: 20px;
     margin-top: 10px;
     color: #666;
+}
+
+.projetos__link {
+    color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 
